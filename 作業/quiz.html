@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>香氛心理測驗 - Silva Pure</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "微軟正黑體", Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fafafa;
+            color: #2c4c2c;
+        }
+
+        nav {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2c4c2c;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .quiz-container {
+            max-width: 800px;
+            margin: 100px auto 50px;
+            padding: 0 20px;
+        }
+
+        .quiz-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .quiz-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .quiz-header p {
+            color: #5a7a5a;
+            font-size: 1.2em;
+        }
+
+        .question-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+        }
+
+        .question {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            color: #2c4c2c;
+        }
+
+        .options {
+            display: grid;
+            gap: 15px;
+        }
+
+        .option-button {
+            padding: 15px 20px;
+            background-color: #e8f0e8;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: left;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+        }
+
+        .option-button:hover {
+            background-color: #d0e0d0;
+            transform: translateX(5px);
+        }
+
+        .result-section {
+            display: none;
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .result-section h2 {
+            color: #2c4c2c;
+            margin-bottom: 20px;
+        }
+
+        .result-section p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .emoji {
+            font-size: 1.2em;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="brand-story.html">品牌故事</a></li>
+            <li><a href="products.html">產品系列</a></li>
+            <li><a href="quiz.html">香氛測驗</a></li>
+        </ul>
+    </nav>
+
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1>Silva Pure 香氛心理測驗</h1>
+            <p>從一點點心情，找到你靈魂中的專屬香氣</p>
+        </div>
+
+        <div class="question-card">
+            <div class="question">Q1. 如果今天有一個下午完全空下來，你最想怎麼安排？</div>
+            <div class="options">
+                <button class="option-button">A. 去植物園散步，感受陽光和草香 🌿</button>
+                <button class="option-button">B. 躲進安靜的咖啡廳，點杯拿鐵看書 ☕</button>
+                <button class="option-button">C. 在家耍廢追劇、點香氛蠟燭放鬆 🛋</button>
+                <button class="option-button">D. 去戶外冒險，爬山或騎單車流汗一下 🚴</button>
+            </div>
+        </div>
+
+        <!-- 其他問題卡片（相同結構） -->
+
+        <div class="result-section">
+            <h2>你的香氛個性分析</h2>
+            <div class="result-content">
+                <!-- 結果內容會通過 JavaScript 動態插入 -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Silva Pure. All rights reserved.</p>
+    </footer>
+</body>
+</html> 

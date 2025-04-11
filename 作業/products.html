@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silva Pure｜香氛系列</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "微軟正黑體", Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fafafa;
+            color: #2c4c2c;
+        }
+
+        nav {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2c4c2c;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 100px auto 50px;
+            padding: 0 20px;
+        }
+
+        .scent-header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 40px 0;
+            background-color: #e8f0e8;
+            border-radius: 10px;
+        }
+
+        .scent-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .scent-header p {
+            color: #5a7a5a;
+            font-size: 1.2em;
+        }
+
+        .scent-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .scent-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+        }
+
+        .scent-card h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #2c4c2c;
+        }
+
+        .scent-details {
+            margin-bottom: 20px;
+        }
+
+        .detail-item {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .detail-item strong {
+            display: block;
+            color: #2c4c2c;
+            margin-bottom: 5px;
+        }
+
+        .scent-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .category-label {
+            display: inline-block;
+            padding: 5px 15px;
+            background-color: #e8f0e8;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            font-size: 0.9em;
+            color: #2c4c2c;
+        }
+
+        footer {
+            background-color: #2c4c2c;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="brand-story.html">品牌故事</a></li>
+            <li><a href="products.html">產品系列</a></li>
+            <li><a href="quiz.html">香氛測驗</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <div class="scent-header">
+            <h1>Silva Pure 全系列香氛介紹</h1>
+            <p>每一種香氣，都是一段生活片段的記憶</p>
+        </div>
+
+        <div class="scent-grid">
+            <!-- 果香系列 -->
+            <div class="scent-card">
+                <span class="category-label">果香系列</span>
+                <img src="citrus.jpg" alt="晨露柑橘" class="scent-image">
+                <h2>晨露柑橘 Citrus Dew</h2>
+                <div class="scent-details">
+                    <div class="detail-item">
+                        <strong>氣味筆記</strong>
+                        佛手柑、甜橙、薄荷
+                    </div>
+                    <div class="detail-item">
+                        <strong>調性</strong>
+                        清新｜明亮｜提神
+                    </div>
+                    <div class="detail-item">
+                        <strong>靈感畫面</strong>
+                        夏日早晨的第一縷陽光，搭配橙樹下的微風
+                    </div>
+                    <div class="detail-item">
+                        <strong>適合誰</strong>
+                        晨型人、需要提振元氣的你
+                    </div>
+                    <div class="detail-item">
+                        <strong>使用時刻</strong>
+                        早晨起床、上班前洗手，瞬間清醒
+                    </div>
+                </div>
+            </div>
+
+            <!-- 其他香氣卡片（相同結構） -->
+            <div class="scent-card">
+                <span class="category-label">花香系列</span>
+                <img src="lavender.jpg" alt="薰衣草森林" class="scent-image">
+                <h2>薰衣草森林 Lavender Woods</h2>
+                <div class="scent-details">
+                    <div class="detail-item">
+                        <strong>氣味筆記</strong>
+                        真正薰衣草、雪松、鼠尾草
+                    </div>
+                    <div class="detail-item">
+                        <strong>調性</strong>
+                        療癒｜沉靜｜平衡
+                    </div>
+                    <div class="detail-item">
+                        <strong>靈感畫面</strong>
+                        黃昏的山林木屋，窗外飄著淡淡花香
+                    </div>
+                    <div class="detail-item">
+                        <strong>適合誰</strong>
+                        焦慮、壓力大、需要安撫情緒的人
+                    </div>
+                    <div class="detail-item">
+                        <strong>使用時刻</strong>
+                        睡前、放鬆泡澡前、靜心時刻
+                    </div>
+                </div>
+            </div>
+
+            <!-- 繼續添加其他香氣... -->
+             
+            <!-- 其他香氣卡片（相同結構） -->
+            <div class="scent-card">
+                <span class="category-label"> 中性／男性取向系列</span>
+                <img src="cedar.jpg" alt="雪松與迷迭香" class="scent-image">
+                <h2>雪松與迷迭香 Cedar & Rosemary</h2>
+                <div class="scent-details">
+                    <div class="detail-item">
+                        <strong>氣味筆記</strong>
+                        ⻄伯利亞雪松、迷迭香、鼠尾草
+                    </div>
+                    <div class="detail-item">
+                        <strong>調性</strong>
+                        ⽊質｜草本｜理性
+                    </div>
+                    <div class="detail-item">
+                        <strong>靈感畫面</strong>
+                        ⼭間⽊屋洗⼿台，窗邊種著新鮮迷迭香
+                    </div>
+                    <div class="detail-item">
+                        <strong>適合誰</strong>
+                        追求簡約、個性成熟、不愛甜味香氛者
+                    </div>
+                    <div class="detail-item">
+                        <strong>使用時刻</strong>
+                        清晨／深夜，讓⼼慢慢歸零 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Silva Pure. All rights reserved.</p>
+    </footer>
+</body>
+</html>
